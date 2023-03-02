@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "922375181657",
+    "project_id": "aiwallpapershd",
+    "storage_bucket": "aiwallpapershd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:922375181657:android:0517772f6bdea1e29d6848",
+        "android_client_info": {
+          "package_name": "dan.ngoding.aiwallpapershd"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "922375181657-vfqv0ppj52hcs5dntpfo2s9q14jq4m9i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9D9sYKfAT4B3PGyT_4_nVuRpVXdAOqno"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "922375181657-vfqv0ppj52hcs5dntpfo2s9q14jq4m9i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
