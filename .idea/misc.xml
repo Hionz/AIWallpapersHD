@@ -4,12 +4,42 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/MyApp/AIWallpapersHD/app/src/main/res/drawable-v24/bottom_shape.xml" value="0.20260416666666667" />
+        <entry key="..\:/MyApp/AIWallpapersHD/app/src/main/res/drawable-v24/btn_primary.xml" value="0.16111111111111112" />
         <entry key="..\:/MyApp/AIWallpapersHD/app/src/main/res/drawable-v24/ic_launcher_background.xml" value="0.20260416666666667" />
-        <entry key="..\:/MyApp/AIWallpapersHD/app/src/main/res/layout/activity_main.xml" value="0.12771739130434784" />
-        <entry key="..\:/MyApp/AIWallpapersHD/app/src/main/res/layout/activity_splash_screen.xml" value="0.12771739130434784" />
+        <entry key="..\:/MyApp/AIWallpapersHD/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1" />
+        <entry key="..\:/MyApp/AIWallpapersHD/app/src/main/res/drawable/back.xml" value="0.20260416666666667" />
+        <entry key="..\:/MyApp/AIWallpapersHD/app/src/main/res/drawable/ic_baseline_image_24.xml" value="0.20260416666666667" />
+        <entry key="..\:/MyApp/AIWallpapersHD/app/src/main/res/drawable/ic_favorite.xml" value="0.20260416666666667" />
+        <entry key="..\:/MyApp/AIWallpapersHD/app/src/main/res/drawable/ic_favorite_border.xml" value="0.1" />
+        <entry key="..\:/MyApp/AIWallpapersHD/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
+        <entry key="..\:/MyApp/AIWallpapersHD/app/src/main/res/drawable/placeholder.xml" value="0.19907407407407407" />
+        <entry key="..\:/MyApp/AIWallpapersHD/app/src/main/res/drawable/round_outline.xml" value="0.19907407407407407" />
+        <entry key="..\:/MyApp/AIWallpapersHD/app/src/main/res/drawable/toggle_favorite.xml" value="0.20260416666666667" />
+        <entry key="..\:/MyApp/AIWallpapersHD/app/src/main/res/layout/activity_cat.xml" value="0.18" />
+        <entry key="..\:/MyApp/AIWallpapersHD/app/src/main/res/layout/activity_download_wallpaper.xml" value="0.1671195652173913" />
+        <entry key="..\:/MyApp/AIWallpapersHD/app/src/main/res/layout/activity_final_wallpaper.xml" value="0.18" />
+        <entry key="..\:/MyApp/AIWallpapersHD/app/src/main/res/layout/activity_final_wallpaper_from_fans.xml" value="0.22" />
+        <entry key="..\:/MyApp/AIWallpapersHD/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/MyApp/AIWallpapersHD/app/src/main/res/layout/activity_splash_screen.xml" value="0.25" />
+        <entry key="..\:/MyApp/AIWallpapersHD/app/src/main/res/layout/btn_primary.xml" value="0.13949275362318841" />
+        <entry key="..\:/MyApp/AIWallpapersHD/app/src/main/res/layout/custom_layout.xml" value="0.33" />
+        <entry key="..\:/MyApp/AIWallpapersHD/app/src/main/res/layout/fav_item.xml" value="0.13949275362318841" />
         <entry key="..\:/MyApp/AIWallpapersHD/app/src/main/res/layout/fragment_download.xml" value="0.12771739130434784" />
-        <entry key="..\:/MyApp/AIWallpapersHD/app/src/main/res/layout/fragment_home.xml" value="0.1" />
+        <entry key="..\:/MyApp/AIWallpapersHD/app/src/main/res/layout/fragment_favorite.xml" value="0.13858695652173914" />
+        <entry key="..\:/MyApp/AIWallpapersHD/app/src/main/res/layout/fragment_favourite.xml" value="0.18645833333333334" />
+        <entry key="..\:/MyApp/AIWallpapersHD/app/src/main/res/layout/fragment_home.xml" value="0.12" />
+        <entry key="..\:/MyApp/AIWallpapersHD/app/src/main/res/layout/fragment_upload.xml" value="0.25" />
         <entry key="..\:/MyApp/AIWallpapersHD/app/src/main/res/layout/item_bom.xml" value="0.18645833333333334" />
+        <entry key="..\:/MyApp/AIWallpapersHD/app/src/main/res/layout/item_cat.xml" value="0.25" />
+        <entry key="..\:/MyApp/AIWallpapersHD/app/src/main/res/layout/item_color_tone.xml" value="0.22" />
+        <entry key="..\:/MyApp/AIWallpapersHD/app/src/main/res/layout/item_color_toner.xml" value="0.18645833333333334" />
+        <entry key="..\:/MyApp/AIWallpapersHD/app/src/main/res/layout/item_mff.xml" value="0.1490036231884058" />
+        <entry key="..\:/MyApp/AIWallpapersHD/app/src/main/res/layout/item_wallpaper.xml" value="0.2" />
+        <entry key="..\:/MyApp/AIWallpapersHD/app/src/main/res/layout/item_wff.xml" value="0.14325842696629212" />
+        <entry key="..\:/MyApp/AIWallpapersHD/app/src/main/res/layout/layout_set_on.xml" value="0.22" />
+        <entry key="..\:/MyApp/AIWallpapersHD/app/src/main/res/layout/progres_dialog_kustom.xml" value="0.1" />
+        <entry key="..\:/MyApp/AIWallpapersHD/app/src/main/res/layout/set_wallpapers.xml" value="0.25" />
+        <entry key="..\:/MyApp/AIWallpapersHD/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.20260416666666667" />
       </map>
     </option>
   </component>

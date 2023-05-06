@@ -1,0 +1,58 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="30dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Apply"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/tvHS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Set Home Screen"
+            android:textColor="@color/white"
+            android:fontFamily="@font/alata"
+            android:backgroundTint="@color/black"/>
+
+        <Button
+            android:id="@+id/tvLS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Set Lock Screen"
+            android:textColor="@color/white"
+            android:fontFamily="@font/alata"
+            android:backgroundTint="@color/black"/>
+
+        <Button
+            android:id="@+id/tvHL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Set Both"
+            android:textColor="@color/white"
+            android:fontFamily="@font/alata"
+            android:backgroundTint="@color/black"/>
+
+    </LinearLayout>
+
+</FrameLayout>

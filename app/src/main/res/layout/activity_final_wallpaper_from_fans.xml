@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_final_wallpaper_from_fans">
+
+    <ImageView
+        android:id="@+id/finalWallpaperFromFans"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_above="@+id/rl"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/alata"
+            android:gravity="center"
+            android:text="Id"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:textStyle="" />
+
+        <TextView
+            android:id="@+id/wffAuthor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Author"
+            android:fontFamily="@font/alata"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/wffDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Description"
+            android:fontFamily="@font/alata"
+            android:textColor="@color/black"
+            android:textSize="10dp"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp">
+
+        <ImageView
+            android:id="@+id/btnDownload"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="85dp"
+            android:background="@drawable/download"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"/>
+
+        <ImageView
+            android:id="@+id/btnFav"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:textOn=""
+            android:textOff=""
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="361dp"
+            android:src="@drawable/ic_favorite_border"/>
+
+        <ImageView
+            android:id="@+id/btnSet"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="85dp"
+            android:background="@drawable/wallpaper"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

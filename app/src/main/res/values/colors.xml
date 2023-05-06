@@ -7,4 +7,42 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    
+    <color name="fullWallpaperBackground">#283E4B</color>
+
+    <color name="app_background">#fefefe</color>
+
+    <color name="primary">#000000</color>
+    <color name="primaryDark">#FFBB86FC</color>
+    <!--        <color name="primary">#F36359</color>-->
+    <!--        <color name="primaryDark">#F39089</color>-->
+    <color name="primaryVariant">#FF3700B3</color>
+    <color name="onPrimary">#FFFFFF</color>
+
+    <color name="secondary">#2196F3</color>
+    <color name="secondaryVariant">#2196F3</color>
+    <color name="onSecondary">#000000</color>
+
+    <!--Bottom Navigation-->
+    <color name="bottom_nav">#ffffff</color>
+    <color name="bottom_nav_item_inactive">#77000000</color>
+    <color name="bottom_nav_item_active">@color/primary</color>
+    <!--<color name="bottom_nav_item_inactive">#bbffffff</color>
+    <color name="bottom_nav_item_active">#ffffff</color>-->
+
+    <color name="toolbar">#ffffff</color>
+    <color name="onToolbar">#111111</color>
+    <color name="status_bar">#e0e0e0</color>
+    <color name="navigation_bar">#F2F9FB</color>
+
+
+
+    <color name="textPrimary">#111111</color>
+    <color name="textSecondary">#444444</color>
+    <color name="textTertiary">#707070</color>
+
+    <color name="dark_ripple">#999999</color>
+    <color name="whiteDull">#cccccc</color>
+
+    <color name="cardBackground">#eeeeee</color>
 </resources>
