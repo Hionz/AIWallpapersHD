@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".Fragments.AboutFragment">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="75dp"
+            android:background="@drawable/logo"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:gravity="center"
+            android:text="AI Wallpapers HD"
+            android:textSize="20sp"
+            android:fontFamily="@font/alata"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+
+        <LinearLayout
+            android:id="@+id/btnMe"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/ic_me"
+                android:layout_gravity="center|left"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="25dp"
+                android:gravity="center|left"
+                android:text="About Me"
+                android:textSize="20sp"
+                android:fontFamily="@font/alata"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/btnFeedback"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:orientation="horizontal">
+            
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/ic_feedback"
+                android:layout_gravity="center|left"/>
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="25dp"
+                android:gravity="center|left"
+                android:text="Feedback"
+                android:textSize="20sp"
+                android:fontFamily="@font/alata"
+                android:textColor="@color/black" />
+            
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btnTheme"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/ic_theme"
+                android:layout_gravity="center|left"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="25dp"
+                android:gravity="center|left"
+                android:text="App theme"
+                android:textSize="20sp"
+                android:fontFamily="@font/alata"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btnPrivacy"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/ic_privacy"
+                android:layout_gravity="center|left"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="25dp"
+                android:gravity="center|left"
+                android:text="Privacy Policy"
+                android:textSize="20sp"
+                android:fontFamily="@font/alata"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btnTerm"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/ic_term"
+                android:layout_gravity="center|left"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="25dp"
+                android:gravity="center|left"
+                android:text="Terms &amp; Conditions"
+                android:textSize="20sp"
+                android:fontFamily="@font/alata"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+        
+    </LinearLayout>
+
+</FrameLayout>

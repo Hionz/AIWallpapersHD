@@ -35,5 +35,6 @@
     <string name="favorite_button">Favorite Button</string>
     <string name="share_button">Share Button</string>
     <string name="info_button">Info Button</string>
+    <string name="imageslide">ImageSlide</string>
 
 </resources>

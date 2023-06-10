@@ -54,11 +54,11 @@ class UploadFragment : Fragment() {
         val intent = Intent(Intent.ACTION_GET_CONTENT)
         intent.type = "image/*"
         startActivityForResult(intent, READ_REQUEST_CODE)
-        binding.saveButton.visibility = View.VISIBLE
     }
 
     private fun uploadToCloudinary(fileUri: Uri) {
         val inputStream = requireContext().contentResolver.openInputStream(fileUri)
+        MediaManager.init(requireContext(), config)
         if (inputStream == null) {
             Toast.makeText(requireContext(), "File does not exist", Toast.LENGTH_SHORT).show()
             return
@@ -104,6 +104,8 @@ class UploadFragment : Fragment() {
             binding.imagev.setImageURI(fileUri)
             val filePath: Uri = fileUri
             imgPath = filePath
+            binding.saveButton.visibility = View.VISIBLE
+            binding.tvThanks.visibility = View.VISIBLE
         } else if (resultCode == Activity.RESULT_CANCELED) {
             Toast.makeText(requireContext(), "Task Cancelled", Toast.LENGTH_SHORT).show()
             binding.saveButton.visibility = View.GONE

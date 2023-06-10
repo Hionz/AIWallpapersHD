@@ -11,8 +11,9 @@ import com.bumptech.glide.Glide
 import dan.ngoding.aiwallpapershd.FinalWallpaper
 import dan.ngoding.aiwallpapershd.Model.BomModel
 import dan.ngoding.aiwallpapershd.R
+import dan.ngoding.aiwallpapershd.ViewPagerActivity
 
-class BomAdapter(val requireContext: Context, val listBestOfTheMonth: ArrayList<BomModel>) :
+class BomAdapter(val requireContext: Context, var listBestOfTheMonth: ArrayList<BomModel>) :
     RecyclerView.Adapter<BomAdapter.bomViewHolder>(){
 
     inner class bomViewHolder (itemView : View) : RecyclerView.ViewHolder(itemView){
@@ -28,8 +29,11 @@ class BomAdapter(val requireContext: Context, val listBestOfTheMonth: ArrayList<
     override fun onBindViewHolder(holder: bomViewHolder, position: Int) {
         Glide.with(requireContext).load(listBestOfTheMonth[position].link).into(holder.imageView)
         holder.itemView.setOnClickListener{
-            val intent = Intent(requireContext, FinalWallpaper::class.java)
-            intent.putExtra("link", listBestOfTheMonth[position].link)
+            val intent = Intent(requireContext, ViewPagerActivity::class.java).apply {
+                putExtra("clicked_adapter", "bom")
+                putExtra("clicked_position", position)
+                putExtra("link", listBestOfTheMonth[position].link)
+            }
             requireContext.startActivity(intent)
         }
 

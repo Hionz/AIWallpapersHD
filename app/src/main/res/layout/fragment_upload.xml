@@ -26,13 +26,14 @@
         android:layout_margin="10dp">
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/tvThanks"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:layout_marginBottom="15dp"
             android:background="@drawable/back"
             android:padding="10dp"
+            android:visibility="gone"
             android:text="Thank you for uploading your AI wallpaper image to our app! We appreciate your contribution and want to ensure that all images uploaded meet our standards. Please remember that all images must be free to use for anyone, must not contain any inappropriate or sexual content, and must be 2MB or less in size. We will review all images submitted before displaying them on our app. Thank you again for your contribution!"
             android:textSize="16sp" />
 

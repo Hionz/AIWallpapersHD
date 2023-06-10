@@ -4,26 +4,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="10dp"
     tools:context=".CatActivity">
 
     <TextView
         android:id="@+id/catTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:fontFamily="@font/alata"
         android:text="Abstract"
-        android:textSize="40dp"
         android:textColor="@color/black"
-        android:fontFamily="@font/alata"/>
+        android:textSize="40dp" />
 
     <TextView
         android:id="@+id/catCount"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/catTitle"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
         android:fontFamily="@font/alata"
         android:paddingBottom="5dp"
         android:text="5 Wallpapers Available"

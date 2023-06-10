@@ -31,9 +31,10 @@ class CatAdapter(val requireContext: Context, val listOfTheCategoties: ArrayList
         holder.name.text = listOfTheCategoties[position].name
         Glide.with(requireContext).load(listOfTheCategoties[position].link).into(holder.imageView)
         holder.itemView.setOnClickListener{
-            val intent = Intent(requireContext, CatActivity::class.java)
-            intent.putExtra("uid", listOfTheCategoties[position].id)
-            intent.putExtra("name", listOfTheCategoties[position].name)
+            val intent = Intent(requireContext, CatActivity::class.java).apply {
+                putExtra("uid", listOfTheCategoties[position].id)
+                putExtra("name", listOfTheCategoties[position].name)
+            }
             requireContext.startActivity(intent)
         }
     }

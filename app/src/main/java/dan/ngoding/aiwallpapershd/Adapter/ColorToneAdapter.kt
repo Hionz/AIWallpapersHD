@@ -11,8 +11,9 @@ import androidx.recyclerview.widget.RecyclerView
 import dan.ngoding.aiwallpapershd.FinalWallpaper
 import dan.ngoding.aiwallpapershd.Model.ColorToneModel
 import dan.ngoding.aiwallpapershd.R
+import dan.ngoding.aiwallpapershd.ViewPagerActivity
 
-class ColorToneAdapter(val requireContext: Context, val listColorTone: ArrayList<ColorToneModel>) :
+class ColorToneAdapter(val requireContext: Context, var listColorTone: ArrayList<ColorToneModel>) :
     RecyclerView.Adapter<ColorToneAdapter.bomViewHolder>(){
 
     inner class bomViewHolder (itemView : View) : RecyclerView.ViewHolder(itemView){
@@ -29,12 +30,14 @@ class ColorToneAdapter(val requireContext: Context, val listColorTone: ArrayList
         val color = listColorTone[position].color
         holder.cardBack.setBackgroundColor(Color.parseColor(color!!))
 
-        holder.itemView.setOnClickListener{
-            val intent = Intent(requireContext, FinalWallpaper::class.java)
-            intent.putExtra("link", listColorTone[position].link)
+        holder.itemView.setOnClickListener {
+            val intent = Intent(requireContext, ViewPagerActivity::class.java).apply {
+                putExtra("clicked_adapter", "color_tone")
+                putExtra("link", listColorTone[position].link)
+                putExtra("clicked_position", position)
+            }
             requireContext.startActivity(intent)
         }
-
     }
 
     override fun getItemCount() = listColorTone.size

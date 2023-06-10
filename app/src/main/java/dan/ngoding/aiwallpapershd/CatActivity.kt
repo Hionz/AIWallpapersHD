@@ -35,9 +35,7 @@ class CatActivity : AppCompatActivity() {
             binding.catCount.text = "${listOfCatWallpaper.size} Wallpapers Available"
 
             binding.catRcv.layoutManager = StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL)
-            binding.catRcv.adapter = CatImagesAdapter(this, listOfCatWallpaper)
+            binding.catRcv.adapter = CatImagesAdapter(this, listOfCatWallpaper, uid)
         }
-
-
     }
 }

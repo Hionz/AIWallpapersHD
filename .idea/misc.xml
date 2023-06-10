@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
@@ -21,14 +20,16 @@
         <entry key="..\:/MyApp/AIWallpapersHD/app/src/main/res/layout/activity_final_wallpaper_from_fans.xml" value="0.22" />
         <entry key="..\:/MyApp/AIWallpapersHD/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/MyApp/AIWallpapersHD/app/src/main/res/layout/activity_splash_screen.xml" value="0.25" />
+        <entry key="..\:/MyApp/AIWallpapersHD/app/src/main/res/layout/activity_wallpaper_slider.xml" value="0.18" />
         <entry key="..\:/MyApp/AIWallpapersHD/app/src/main/res/layout/btn_primary.xml" value="0.13949275362318841" />
         <entry key="..\:/MyApp/AIWallpapersHD/app/src/main/res/layout/custom_layout.xml" value="0.33" />
         <entry key="..\:/MyApp/AIWallpapersHD/app/src/main/res/layout/fav_item.xml" value="0.13949275362318841" />
         <entry key="..\:/MyApp/AIWallpapersHD/app/src/main/res/layout/fragment_download.xml" value="0.12771739130434784" />
         <entry key="..\:/MyApp/AIWallpapersHD/app/src/main/res/layout/fragment_favorite.xml" value="0.13858695652173914" />
         <entry key="..\:/MyApp/AIWallpapersHD/app/src/main/res/layout/fragment_favourite.xml" value="0.18645833333333334" />
-        <entry key="..\:/MyApp/AIWallpapersHD/app/src/main/res/layout/fragment_home.xml" value="0.12" />
+        <entry key="..\:/MyApp/AIWallpapersHD/app/src/main/res/layout/fragment_home.xml" value="0.25" />
         <entry key="..\:/MyApp/AIWallpapersHD/app/src/main/res/layout/fragment_upload.xml" value="0.25" />
+        <entry key="..\:/MyApp/AIWallpapersHD/app/src/main/res/layout/image_container.xml" value="0.18645833333333334" />
         <entry key="..\:/MyApp/AIWallpapersHD/app/src/main/res/layout/item_bom.xml" value="0.18645833333333334" />
         <entry key="..\:/MyApp/AIWallpapersHD/app/src/main/res/layout/item_cat.xml" value="0.25" />
         <entry key="..\:/MyApp/AIWallpapersHD/app/src/main/res/layout/item_color_tone.xml" value="0.22" />
@@ -43,7 +44,7 @@
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

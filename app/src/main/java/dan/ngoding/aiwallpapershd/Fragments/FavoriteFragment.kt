@@ -31,18 +31,22 @@ class FavoriteFragment : Fragment() {
 
         binding.rcvFavourite.layoutManager = StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL)
         binding.rcvFavourite.adapter = FavoriteAdapter(requireContext(), listOfFavWallpaper)
+        binding.rcvFavourite.isNestedScrollingEnabled = false
 
         return binding.root
     }
 
     override fun onResume() {
         super.onResume()
-        val listOfFavWallpaper = arrayListOf<Fav>()
         val favList = database.favDao().getAll()
-        listOfFavWallpaper.addAll(favList)
+        val listOfFavWallpaper = ArrayList(favList)
         binding.favCount.text = "${listOfFavWallpaper.size} Wallpapers Available"
-        binding.rcvFavourite.adapter = FavoriteAdapter(requireContext(), listOfFavWallpaper)
-        binding.rcvFavourite.adapter?.notifyDataSetChanged()
+        binding.rcvFavourite.adapter?.apply {
+            // Update the adapter's data and notify the view that the data has changed.
+            this as FavoriteAdapter
+            this.listOfFavWallpaper.clear()
+            this.listOfFavWallpaper.addAll(listOfFavWallpaper)
+            notifyDataSetChanged()
+        }
     }
-
 }

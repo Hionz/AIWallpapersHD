@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="dan.ngoding.aiwallpapershd">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <uses-permission android:name="android.permission.SET_WALLPAPER" />
     <uses-permission android:name="android.permission.SET_WALLPAPER_HINTS" />
@@ -20,6 +19,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AIWallpapersHD">
+        <activity
+            android:name=".FullScreenImageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ViewPagerActivity"
+            android:exported="false" />
         <activity
             android:name=".activity_final_wallpaper_from_fans"
             android:exported="true" />

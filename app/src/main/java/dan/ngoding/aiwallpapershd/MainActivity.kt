@@ -2,11 +2,13 @@ package dan.ngoding.aiwallpapershd
 
 import android.content.Intent
 import android.content.pm.PackageManager
+import android.graphics.Color
 import android.os.Build
 import android.os.Bundle
 import android.os.Environment
 import android.provider.Settings
 import android.util.Log
+import android.view.View
 import android.view.Window
 import android.view.WindowManager
 import android.widget.Toast
@@ -15,6 +17,8 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentTransaction
+import dan.ngoding.aiwallpapershd.Fragments.AboutFragment
 import dan.ngoding.aiwallpapershd.Fragments.DownloadFragment
 import dan.ngoding.aiwallpapershd.Fragments.FavoriteFragment
 import dan.ngoding.aiwallpapershd.Fragments.HomeFragment
@@ -24,7 +28,7 @@ import dan.ngoding.aiwallpapershd.databinding.ActivityMainBinding
 class MainActivity : AppCompatActivity() {
 
     lateinit var binding : ActivityMainBinding
-
+    private var currentButton: View? = null
 
     private companion object {
         //Permission request constant, assign any value
@@ -32,51 +36,63 @@ class MainActivity : AppCompatActivity() {
         private const val TAG = "PERMISSION_TAG"
     }
 
+    private var currentFragment: Fragment? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        // Set the content view
         binding = ActivityMainBinding.inflate(layoutInflater)
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
-        window.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        supportRequestWindowFeature(Window.FEATURE_NO_TITLE)
+        window.setFlags(
+            WindowManager.LayoutParams.FLAG_FULLSCREEN,
+            WindowManager.LayoutParams.FLAG_FULLSCREEN
+        )
         setContentView(binding.root)
 
-        replaceFragment(HomeFragment())
+        // Set the initial fragment to HomeFragment
+        currentFragment = HomeFragment()
+        supportFragmentManager.beginTransaction().replace(R.id.fragmentReplace, currentFragment!!).commit()
 
+        // Set the initial button to the Home button and change its background color
+        currentButton = binding.icHome
+        currentButton?.setBackgroundColor(Color.LTGRAY)
+
+        // Set the click listeners for the bottom navigation buttons
         binding.icHome.setOnClickListener{
-
-            replaceFragment(HomeFragment())
+            replaceFragment(HomeFragment(), binding.icHome)
         }
-
-//        binding.icDownload.setOnClickListener{
-//            if (checkPermission()){
-//                Log.e(TAG, "onCreate: Permission already granted, you can download now")
-//                replaceFragment(DownloadFragment())
-//            }else{
-//                Log.e(TAG, "onCreate: Permission Denied, Try again...")
-//                requestPermission()
-//            }
-//      }
-
         binding.icUpload.setOnClickListener{
             if (checkPermission()){
-                Log.e(TAG, "onCreate: Permission already granted, you can download now")
-                replaceFragment(UploadFragment())
+                replaceFragment(UploadFragment(), binding.icUpload)
             }else{
-                Log.e(TAG, "onCreate: Permission Denied, Try again...")
                 requestPermission()
             }
         }
+        binding.icFav.setOnClickListener{
+            replaceFragment(FavoriteFragment(), binding.icFav)
+        }
 
-            binding.icFav.setOnClickListener{
-                replaceFragment(FavoriteFragment())
-            }
-
+        binding.icMore.setOnClickListener {
+            replaceFragment(AboutFragment(), binding.icMore)
+        }
     }
 
-    fun replaceFragment(fragment : Fragment){
-        val transaction = supportFragmentManager.beginTransaction()
-        transaction.replace(R.id.fragmentReplace, fragment)
-        transaction.commit()
+    private fun replaceFragment(fragment : Fragment, button: View) {
+        // Only replace the fragment if it's not the same as the current fragment.
+        if (fragment.javaClass != currentFragment?.javaClass) {
+            // Reset the background color of the previously selected button.
+            currentButton?.setBackgroundColor(Color.TRANSPARENT)
+
+            // Set the background color of the newly selected button.
+            button.setBackgroundColor(Color.LTGRAY)
+
+            currentFragment = fragment
+            currentButton = button
+            val transaction = supportFragmentManager.beginTransaction()
+            transaction.setCustomAnimations(R.anim.fade_in_fragment, 0)
+            transaction.replace(R.id.fragmentReplace, fragment)
+            transaction.commit()
+        }
     }
 
     private fun requestPermission(){
@@ -92,14 +108,10 @@ class MainActivity : AppCompatActivity() {
                 intent.action = Settings.ACTION_MANAGE_ALL_FILES_ACCESS_PERMISSION
                 storageActivityResultLauncher.launch(intent)
             }
-        }
-        else{
-            storageActivityResultLauncher.launch(intent)
+        } else {
             ActivityCompat.requestPermissions(this,
-                arrayOf(android.Manifest.permission.WRITE_EXTERNAL_STORAGE,
-                    android.Manifest.permission.READ_EXTERNAL_STORAGE),
-                STORAGE_PERMISSION_CODE
-            )
+                arrayOf(android.Manifest.permission.WRITE_EXTERNAL_STORAGE, android.Manifest.permission.READ_EXTERNAL_STORAGE),
+                STORAGE_PERMISSION_CODE)
         }
     }
 
@@ -110,7 +122,6 @@ class MainActivity : AppCompatActivity() {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R){
                 if (Environment.isExternalStorageManager()){
                     Log.e(TAG, "storageActivityResultLauncher: ")
-                    replaceFragment(DownloadFragment())
                 }
                 else{
                     Log.e(TAG,"storageActivityResultLauncher")
@@ -129,24 +140,12 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    override fun onRequestPermissionsResult(
-        requestCode: Int,
-        permissions: Array<out String>,
-        grantResults: IntArray
-    ) {
+    override fun onRequestPermissionsResult(requestCode: Int, permissions: Array<out String>, grantResults: IntArray) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults)
-        if (requestCode == STORAGE_PERMISSION_CODE){
-            if (grantResults.isNotEmpty()){
-                val write = grantResults[0] == PackageManager.PERMISSION_GRANTED
-                val read = grantResults[1] == PackageManager.PERMISSION_GRANTED
-                if (write && read){
-                    Log.e(TAG, "onRequestPermissionResult")
-                    replaceFragment(UploadFragment())
-                }else{
-                    Log.e(TAG, "onRequestPermissionResult: External Storage Permission DENIED...")
-                    Toast.makeText(this, "External Storage Permission DENIED...", Toast.LENGTH_SHORT).show()
-                }
-            }
+        if (requestCode == STORAGE_PERMISSION_CODE && grantResults.isNotEmpty() && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+            replaceFragment(UploadFragment(), binding.icUpload)
+        } else {
+            Toast.makeText(this, "Permission Denied", Toast.LENGTH_SHORT).show()
         }
     }
 }

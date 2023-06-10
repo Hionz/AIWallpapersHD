@@ -61,6 +61,20 @@
 
         </FrameLayout>
 
+        <FrameLayout
+            android:id="@+id/ic_more"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_more"/>
+
+        </FrameLayout>
+
     </LinearLayout>
 
 </RelativeLayout>
