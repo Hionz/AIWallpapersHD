@@ -70,7 +70,9 @@ class AboutFragment : Fragment() {
             setTheme(AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM)
         }
 
-        dialog.findViewById<Button>(R.id.btnCncl)
+        dialog.findViewById<Button>(R.id.btnCncl).setOnClickListener {
+            dialog.dismiss()
+        }
     }
 
 

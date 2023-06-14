@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/white"
+    android:background="@color/onSecondary"
     android:orientation="vertical"
     android:gravity="center"
     android:padding="10dp">
@@ -22,7 +22,7 @@
             android:text="Set Wallpaper"
             android:padding="5dp"
             android:textSize="18sp"
-            android:textColor="@android:color/black"
+            android:textColor="@color/onPrimary"
             android:textStyle="bold"
             />
 
@@ -31,11 +31,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:backgroundTint="@color/white"
+            android:backgroundTint="@color/onSecondary"
             android:text="Home Screen"
             android:padding="5dp"
             android:textSize="14sp"
-            android:textColor="@android:color/black"
+            android:textColor="@color/onPrimary"
             />
 
         <Button
@@ -43,11 +43,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:backgroundTint="@color/white"
+            android:backgroundTint="@color/onSecondary"
             android:text="Lock Screen"
             android:padding="5dp"
             android:textSize="14sp"
-            android:textColor="@android:color/black"
+            android:textColor="@color/onPrimary"
             />
 
         <Button
@@ -55,11 +55,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:backgroundTint="@color/white"
+            android:backgroundTint="@color/onSecondary"
             android:text="Both Screen"
             android:padding="5dp"
             android:textSize="14sp"
-            android:textColor="@android:color/black"
+            android:textColor="@color/onPrimary"
             />
 
         <Button
@@ -67,11 +67,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:backgroundTint="@color/black"
+            android:backgroundTint="@color/onPrimary"
             android:text="CANCEL"
             android:padding="5dp"
             android:textSize="14sp"
-            android:textColor="@android:color/white"
+            android:textColor="@color/onSecondary"
             />
 
     </LinearLayout>

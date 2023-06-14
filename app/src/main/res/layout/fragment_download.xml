@@ -17,7 +17,7 @@
             android:layout_marginLeft="20dp"
             android:text="Downloaded"
             android:fontFamily="@font/alata"
-            android:textColor="@color/black"
+            android:textColor="@color/onPrimary"
             android:textSize="40dp"/>
 
         <androidx.recyclerview.widget.RecyclerView

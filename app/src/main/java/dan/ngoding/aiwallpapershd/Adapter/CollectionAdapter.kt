@@ -29,7 +29,7 @@ class CollectionAdapter(val requireContext: Context, val listOfDownloadWallpaper
 
     override fun onBindViewHolder(holder: bomViewHolder, position: Int) {
         Glide.with(requireContext).load(listOfDownloadWallpaper[position])
-            .placeholder(R.drawable.loading)
+            .placeholder(R.drawable.loadinghldr)
             .apply(RequestOptions.bitmapTransform(RoundedCornersTransformation(50, 0)))
             .transition(DrawableTransitionOptions.withCrossFade(1000))
             .into(holder.imageView)

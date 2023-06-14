@@ -18,11 +18,19 @@ import java.io.FileOutputStream
 
 class UploadFragment : Fragment() {
 
+    init {
+        System.loadLibrary("api-keys");
+    }
+
+    external fun getCloudName() : String
+    external fun getApiKey() : String
+    external fun getApiSecret() : String
+
     private lateinit var binding: FragmentUploadBinding
     private val config = hashMapOf(
-        "cloud_name" to "dkk9r2txw",
-        "api_key" to "248319874547291",
-        "api_secret" to "3kws8SCNpm-td03Qnnds5ihp9-M"
+        "cloud_name" to getCloudName(),
+        "api_key" to getApiKey(),
+        "api_secret" to getApiSecret()
     )
     private var imgPath: Uri? = null
     private val READ_REQUEST_CODE = 42

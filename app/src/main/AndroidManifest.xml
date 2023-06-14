@@ -21,21 +21,27 @@
         android:theme="@style/Theme.AIWallpapersHD">
         <activity
             android:name=".FullScreenImageActivity"
+            android:screenOrientation="portrait"
             android:exported="false" />
         <activity
             android:name=".ViewPagerActivity"
+            android:screenOrientation="portrait"
             android:exported="false" />
         <activity
             android:name=".activity_final_wallpaper_from_fans"
+            android:screenOrientation="portrait"
             android:exported="true" />
         <activity
             android:name=".CatActivity"
+            android:screenOrientation="portrait"
             android:exported="true" />
         <activity
             android:name=".FinalWallpaper"
+            android:screenOrientation="portrait"
             android:exported="true" />
         <activity
             android:name=".SplashScreen"
+            android:screenOrientation="portrait"
             android:exported="true"
             android:noHistory="true">
             <intent-filter>
@@ -46,6 +52,7 @@
         </activity>
         <activity
             android:name=".MainActivity"
+            android:screenOrientation="portrait"
             android:exported="true" />
     </application>
 

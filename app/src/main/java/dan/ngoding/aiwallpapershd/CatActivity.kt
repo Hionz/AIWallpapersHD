@@ -19,7 +19,10 @@ class CatActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityCatBinding.inflate(layoutInflater)
         requestWindowFeature(Window.FEATURE_NO_TITLE);
-        window.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        window.setFlags(
+            WindowManager.LayoutParams.FLAG_FULLSCREEN,
+            WindowManager.LayoutParams.FLAG_FULLSCREEN
+        )
         setContentView(binding.root)
 
         val db = FirebaseFirestore.getInstance()

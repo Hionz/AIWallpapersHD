@@ -7,7 +7,7 @@
     android:padding="10dp">
 
     <ProgressBar
-        android:indeterminateTint="@color/black"
+        android:indeterminateTint="@color/onPrimary"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginEnd="10dp"/>
@@ -16,7 +16,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Wait..."
-        android:textColor="@color/black"
+        android:textColor="@color/onPrimary"
         android:textSize="15dp"/>
 
 </LinearLayout>

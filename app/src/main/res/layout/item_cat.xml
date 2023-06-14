@@ -33,7 +33,7 @@
                 android:text="Abstract"
                 android:textSize="20dp"
                 android:fontFamily="@font/alata"
-                android:textColor="@color/white"/>
+                android:textColor="@color/secondary"/>
 
 
         </RelativeLayout>

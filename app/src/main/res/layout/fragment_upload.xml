@@ -16,7 +16,7 @@
         android:layout_marginBottom="15dp"
         android:fontFamily="@font/alata"
         android:text="Upload"
-        android:textColor="@color/black"
+        android:textColor="@color/onPrimary"
         android:textSize="40dp" />
 
     <LinearLayout
@@ -43,8 +43,9 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginBottom="15dp"
-            android:backgroundTint="@color/black"
-            android:text="CHOOSE IMAGE" />
+            android:backgroundTint="@color/onPrimary"
+            android:text="CHOOSE IMAGE"
+            android:textColor="@color/onSecondary"/>
 
         <ImageView
             android:id="@+id/imagev"

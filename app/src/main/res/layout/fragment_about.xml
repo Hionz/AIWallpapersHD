@@ -25,7 +25,7 @@
             android:text="AI Wallpapers HD"
             android:textSize="20sp"
             android:fontFamily="@font/alata"
-            android:textColor="@color/black"
+            android:textColor="@color/onPrimary"
             android:textStyle="bold"/>
 
 
@@ -39,6 +39,7 @@
                 android:layout_width="35dp"
                 android:layout_height="35dp"
                 android:background="@drawable/ic_me"
+                android:backgroundTint="@color/onPrimary"
                 android:layout_gravity="center|left"/>
 
             <TextView
@@ -49,7 +50,7 @@
                 android:text="About Me"
                 android:textSize="20sp"
                 android:fontFamily="@font/alata"
-                android:textColor="@color/black" />
+                android:textColor="@color/onPrimary" />
 
         </LinearLayout>
         
@@ -63,6 +64,7 @@
                 android:layout_width="35dp"
                 android:layout_height="35dp"
                 android:background="@drawable/ic_feedback"
+                android:backgroundTint="@color/onPrimary"
                 android:layout_gravity="center|left"/>
             
             <TextView
@@ -73,7 +75,7 @@
                 android:text="Feedback"
                 android:textSize="20sp"
                 android:fontFamily="@font/alata"
-                android:textColor="@color/black" />
+                android:textColor="@color/onPrimary" />
             
         </LinearLayout>
 
@@ -87,6 +89,7 @@
                 android:layout_width="35dp"
                 android:layout_height="35dp"
                 android:background="@drawable/ic_theme"
+                android:backgroundTint="@color/onPrimary"
                 android:layout_gravity="center|left"/>
 
             <TextView
@@ -97,7 +100,7 @@
                 android:text="App theme"
                 android:textSize="20sp"
                 android:fontFamily="@font/alata"
-                android:textColor="@color/black" />
+                android:textColor="@color/onPrimary" />
 
         </LinearLayout>
 
@@ -111,6 +114,7 @@
                 android:layout_width="35dp"
                 android:layout_height="35dp"
                 android:background="@drawable/ic_privacy"
+                android:backgroundTint="@color/onPrimary"
                 android:layout_gravity="center|left"/>
 
             <TextView
@@ -121,7 +125,7 @@
                 android:text="Privacy Policy"
                 android:textSize="20sp"
                 android:fontFamily="@font/alata"
-                android:textColor="@color/black" />
+                android:textColor="@color/onPrimary" />
 
         </LinearLayout>
 
@@ -135,6 +139,7 @@
                 android:layout_width="35dp"
                 android:layout_height="35dp"
                 android:background="@drawable/ic_term"
+                android:backgroundTint="@color/onPrimary"
                 android:layout_gravity="center|left"/>
 
             <TextView
@@ -145,7 +150,7 @@
                 android:text="Terms &amp; Conditions"
                 android:textSize="20sp"
                 android:fontFamily="@font/alata"
-                android:textColor="@color/black" />
+                android:textColor="@color/onPrimary" />
 
         </LinearLayout>
         

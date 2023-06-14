@@ -17,11 +17,11 @@
     <!--        <color name="primary">#F36359</color>-->
     <!--        <color name="primaryDark">#F39089</color>-->
     <color name="primaryVariant">#FF3700B3</color>
-    <color name="onPrimary">#FFFFFF</color>
+    <color name="onPrimary">#000000</color>
 
-    <color name="secondary">#2196F3</color>
+    <color name="secondary">@color/white</color>
     <color name="secondaryVariant">#2196F3</color>
-    <color name="onSecondary">#000000</color>
+    <color name="onSecondary">#FFFFFF</color>
 
     <!--Bottom Navigation-->
     <color name="bottom_nav">#ffffff</color>

@@ -39,7 +39,7 @@ class WffImagesAdapter(val requireContext: Context, var listOfWallpapersFromFans
         progressBar.visibility = View.VISIBLE
 
         Glide.with(requireContext).load(listOfWallpapersFromFans[position].link)
-            .placeholder(R.drawable.loading)
+            .placeholder(R.drawable.loadinghldr)
             .apply(bitmapTransform(RoundedCornersTransformation(50,0)))
             .transition(DrawableTransitionOptions.withCrossFade(250))
             .listener(object : RequestListener<Drawable> {
